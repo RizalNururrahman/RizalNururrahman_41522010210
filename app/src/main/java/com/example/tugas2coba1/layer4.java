@@ -7,6 +7,8 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
+import android.view.View;
+import android.content.Intent;
 
 public class layer4 extends AppCompatActivity {
 
@@ -20,5 +22,10 @@ public class layer4 extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
+    }
+
+    public void pindah5(View view) {
+        Intent pindah5 = new Intent(layer4.this, layer5.class);
+        startActivity(pindah5);
     }
 }

@@ -9,6 +9,8 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
+import android.view.View;
+import android.content.Intent;
 
 public class layer3 extends AppCompatActivity {
 
@@ -28,4 +30,10 @@ public class layer3 extends AppCompatActivity {
         Intent pindah3 = new Intent(layer3.this, Login.class);
         startActivity(pindah3);
     }
+
+    public void pindah5(View view) {
+        Intent pindah5 = new Intent(layer3.this, layer5.class);
+        startActivity(pindah5);
+    }
+
 }

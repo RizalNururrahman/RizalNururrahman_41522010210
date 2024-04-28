@@ -177,6 +177,7 @@
         android:textColor="@color/white"
         android:textSize="23sp"
         android:textAllCaps="false"
+        android:onClick="pindah5"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintLeft_toLeftOf="parent"
