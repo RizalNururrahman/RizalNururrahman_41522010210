@@ -3,6 +3,22 @@
   <component name="deploymentTargetDropDown">
     <value>
       <entry key="app">
+        <State>
+          <targetSelectedWithDropDown>
+            <Target>
+              <type value="QUICK_BOOT_TARGET" />
+              <deviceKey>
+                <Key>
+                  <type value="VIRTUAL_DEVICE_PATH" />
+                  <value value="C:\Users\RIZALNURURRAHMAN\.android\avd\Pixel_2_API_31.avd" />
+                </Key>
+              </deviceKey>
+            </Target>
+          </targetSelectedWithDropDown>
+          <timeTargetWasSelectedWithDropDown value="2024-05-29T07:44:40.990109Z" />
+        </State>
+      </entry>
+      <entry key="scan_ktp_page">
         <State />
       </entry>
     </value>

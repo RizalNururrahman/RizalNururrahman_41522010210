@@ -1,6 +1,8 @@
 package com.example.tugas2coba1;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.view.View.OnClickListener;
@@ -31,5 +33,30 @@ public class layer5 extends AppCompatActivity {
         DrawerLayout drawerLayout = findViewById(R.id.main);
         NavigationView navigationView = findViewById(R.id.hal_view);
         drawerLayout.openDrawer(GravityCompat.END);
+    }
+
+    public void pindahlayer5(View view) {
+        Intent pindahlayer5 = new Intent(layer5.this, scan_tutupbotol.class);
+        startActivity(pindahlayer5);
+    }
+
+    public void pindahlayer5ke2(View view) {
+        Intent pindahlayer5ke2 = new Intent(layer5.this, scan_tutupbotol.class);
+        startActivity(pindahlayer5ke2);
+    }
+
+//    public void travelokalayer5(View view) {
+//        Intent travelokalayer5 = new Intent(layer5.this, redeem_vaganza_detail_page.class);
+//        startActivity(travelokalayer5);
+//    }
+
+    public void redeemvaganza(View view) {
+        Intent redeemvaganza = new Intent(layer5.this, redeem_vaganza_katalog_page.class);
+        startActivity(redeemvaganza);
+    }
+
+    public void extravaganza(View view) {
+        Intent extravaganza = new Intent(layer5.this, congrats_page.class);
+        startActivity(extravaganza);
     }
 }

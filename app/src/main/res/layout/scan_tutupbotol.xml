@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".scan_tutupbotol"
+    android:background="@color/white">
+
+
+    <Button
+        android:id="@+id/back"
+        android:layout_width="22dp"
+        android:layout_height="17dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="36dp"
+        android:onClick="panahkembalikelayer5"
+        android:background="@drawable/ic_arrow" />
+
+    <TextView
+        android:id="@+id/tutupbotol"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="19dp"
+        android:layout_marginLeft="19dp"
+        android:layout_marginTop="32dp"
+        android:layout_toEndOf="@+id/back"
+        android:layout_toRightOf="@id/back"
+        android:fontFamily="@font/montserrat_semibold"
+        android:text="Scan Tutup Botol"
+        android:textColor="@color/semi_black"
+        android:textSize="18dp" />
+
+    <ImageView
+        android:id="@+id/profil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tutupbotol"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="146dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="145dp"
+        app:srcCompat="@drawable/pict_profile" />
+
+    <TextView
+        android:id="@+id/totaltutupbotol"
+        android:layout_width="215dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/profil"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="115dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="80dp"
+        android:fontFamily="@font/montserrat_medium"
+        android:text="Total Tutup Botol"
+        android:textColor="@color/black_scan"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="186dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/totaltutupbotol"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="107dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="117dp"
+        android:fontFamily="@font/montserrat_extrabold"
+        android:text="Olivia Gabrielle"
+        android:textColor="@color/black_scan"
+        android:textSize="18sp" />
+
+    <TextView
+        android:layout_width="78dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/totaltutupbotol"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="262dp"
+        android:layout_marginLeft="-32dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="71dp"
+        android:layout_toRightOf="@+id/name"
+        android:fontFamily="@font/montserrat_semibold"
+        android:text="30"
+        android:textColor="@color/blue"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/setiap"
+        android:layout_width="331dp"
+        android:layout_height="64dp"
+        android:layout_below="@id/name"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="42dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="38dp"
+        android:fontFamily="@font/montserrat_light"
+        android:gravity="center"
+        android:text="@string/setiap_kali"
+        android:textColor="@color/black"
+        android:textSize="13dp" />
+
+    <Button
+        android:id="@+id/btn_scan"
+        android:layout_width="223dp"
+        android:layout_height="201dp"
+        android:layout_above="@+id/btnsubmit"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="92dp"
+        android:layout_marginEnd="95dp"
+        android:layout_marginBottom="127dp"
+        android:onClick="scantutup"
+        android:background="@drawable/scanfoto" />
+
+    <Button
+        android:id="@+id/btnsubmit"
+        android:layout_width="350dp"
+        android:layout_height="55dp"
+        android:layout_alignBottom="@+id/btncancel"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="31dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="61dp"
+        android:background="@drawable/button_login_register"
+        android:onClick="submit"
+        android:text="Submit"
+        android:textColor="@color/white" />
+
+    <Button
+        android:id="@+id/btncancel"
+        android:layout_width="350dp"
+        android:layout_height="55dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="493dp"
+        android:layout_marginEnd="31dp"
+        android:layout_marginBottom="56dp"
+        android:background="@drawable/rectanglegils"
+
+        android:onClick="cancel"
+        android:text="Cancel"
+        android:textColor="@color/black_scan" />
+
+</RelativeLayout>
